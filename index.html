@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>!</title>
-    <script src="https://kit.fontawesome.com/c68f917b3f.js" crossorigin="anonymous"></script>
+    <title>Ausgrenzung der LGBTQ+ Community</title>
+    <script src="https://kit.fontawesome.com/c68f917b3f.js" 
+    crossorigin="anonymous"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,800&display=swap');
-        .titel {
-            font-family: 'Poppins', sans-serif;
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@100;500&family=Roboto&display=swap');
+      .titel {
+        font-family: poppins;
             font-size: 4vw;
-            display: flex;
             font-weight: 900;
-            text-decoration: underline black 0.4vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            position: -webkit-sticky;
+            top: 1.5%;
+            z-index: 100;
         }
         .container1 {
             width: 100vw;
-            /*height: 20vh;*/
+            /height: 20vh;/
             display: flex;
             z-index: 0;
             justify-content: center;
@@ -37,6 +40,7 @@
             animation-duration: 1s;
             z-index: 100;
             transition: ease 0.1s;
+            margin: 0.75% 0%;
         }
         @media only screen and (max-width: 400px) {
             body {background-color: rgba(234,234,234,1)}
@@ -133,10 +137,26 @@
            }
            .titel {
                 font-size: 2.3vw !important;
+                top:-0.25%;
            }
            .infos {
             font-size: 30px !important;
            }
+           .cube1 {
+            font-size: 15px;
+           }
+           .titel_cube1A {
+              margin: 0vh 0vh 3vh 0vh;
+           }
+           header {
+                height: 10vh;
+            }
+            li {
+                font-size: 3vh;
+            }
+            #burger {
+                top: -0.5%;
+            }
         }
         @media only screen and (min-width: 1500px) {
             .cubes {
@@ -147,6 +167,12 @@
             }
             .container {
                 height: 120vh !important;
+            }
+            header {
+                height: 10vh;
+            }
+            .titel {
+              font-size: 40px !important;
             }
         }
         @media only screen and (max-width: 540px) {
@@ -177,26 +203,28 @@
             height: 100vh !important;
             background: rgb(240,254,250);
             text-rendering:optimizeLegibility;
+            font-family: 'Poppins', sans-serif;
         }
         ::-webkit-scrollbar {
             display: none;
         }
         .infos {
             font-family: 'Poppins', sans-serif;
-            font-size: 2.8vw;
+            font-size: 3vw;
+            font-weight:bold ;
         }
         .cube1 {
-            height: 40vh;
             width: 70vw;
+            height: 50vh;
             display: flex;
             flex-direction: column;
+            align-items: center;
             gap: 0.4vw;
             border-radius: 20px;
             background-color: rgba(0, 255, 255, 0.226);
 
         }
         .titel_cube1 {
-            font-family: poppins;
             font-weight: 700;
             display: flex;
             justify-content: center;
@@ -204,6 +232,15 @@
             height: 10vh;
             font-size: 2vw;
             align-items: center;
+        }
+        .titel_cube1A {
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 10vh;
+            font-size: 2vw;
+            align-items: center;  
         }
         .text {
             font-size: 2vw;
@@ -214,7 +251,6 @@
             gap: 10px;
             justify-content: center !important;
             align-items: center !important;
-            font-family: poppins;
             margin-left: 10%;
         }
         .cubes {
@@ -228,8 +264,7 @@
             height:50vh;
             width: 100vw;
             background-color: rgb(22, 207, 130);
-            left: 0;
-            top: 0;
+            inset: 0;
             transition: 0.3s ease;
             display: flex;
             transform: translatey(-49vh);
@@ -241,7 +276,6 @@
             display: flex;
             height: 20%;
             align-items: center;
-            font-family: poppins;
             font-weight: 900;
             justify-content: center;
             font-size: 2em;
@@ -250,8 +284,6 @@
         .spacer {
             width: 100vw;
             height: 10vh;
-            
-            /**/
         }
         #cross {
             cursor: pointer;
@@ -281,7 +313,7 @@
 :-ms-input-placeholder {  
    text-align: center; 
 }
-        #search {
+        .search {
             position: fixed;
             font-size: 2.5vw;
             height: 5.3vh;
@@ -309,6 +341,7 @@
             top: 0 !important;
             left: 0 !important;
             width: 100vw;
+
         }
         .spacer2
         {
@@ -325,9 +358,9 @@
             font-weight: 600;
         }
         .input {
-            /*width: 40vw;*/
+            /width: 40vw;/
             width: 0vw;
-            /*display: flex;*/
+            /display: flex;/
             display: none;
             height: 4vh;
             transition: ease-in 0.2s;
@@ -343,51 +376,116 @@
             width: 100%;
             align-items: center;
             height: 100%;
-            font-family: poppins;
             color: black;
-            font-weight: 800;
         }
         .input:focus {
             color: black;
-            font-family: poppins;
-            font-weight: 800;
         }
+        a { 
+            color: black;
+        }
+        header {
+            width: 100%;
+            position: fixed;
+            inset: 0% ;
+            height: 7vh;
+            background-color: rgb(240,254,250) !important;
+		    /* box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px; */
+            z-index: 1;
+        }
+       li {
+        display: none;
+       }
+       li.active {
+        display: block;
+        color: black;
+       }
+       #elementList {
+         position: absolute;
+         width: 50%;
+         height: 40%;
+         margin: 10%;
+       }
+       #prevBtn, #nextBtn {
+         font-size: 3.5vw;
+         margin: 0vh 20vw;
+         cursor: pointer;
+       }
+       .pos {
+         width: 100%;
+         height: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: flex-end;
+       }
+       .active {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        transform: translateY(20vh);
+       }
     </style>
 </head>
 <body>
-    <i class="fa-solid fa-magnifying-glass" id="search">
-        <input class="input" type="text" placeholder="Search">
-    </i>
     <div class="menu1">
         <i class="fa-solid fa-xmark" id="cross"></i>
-        <div class="title_menu">
-            Menu
-        </div>
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass" id="search"></i>
+            <input type="text" placeholder="Search..." class="input">
+            
+          </div>
+          <div class="title_menu">
+            
+          </div>
     </div>
-    <i class="fa-solid fa-bars" id="burger"></i>
-    <div class="spacer"></div>
+    
+    <div class="spacer"> </div>
     <div class="page">
         <div class="main">
             <div class="container1">
-               <div class="titel">
-                    Ausgrenzung der Lgbtq Community
-                </div>
-                <div class="img" style="z-index: 0;">
-                    <img src='img.webp' class="img1">
-                </div>
-                <div class="infos">
-                    Generelle Informationen
-                </div>
-                <div class="cubes">
+              <header>
+                <i class="fa-solid fa-bars" id="burger"></i>
+                
+                
+              </header> 
+              <div class="titel">
+                Ausgrenzung der LGBTQ+ Community
+              </div>
+              <div class="img" style="z-index: 0;">
+                <img src='img.webp' class="img1">
+              </div>
+              <div class="infos">
+                Generelle Informationen
+              </div>
+              <div class="infos">
+                  Lösungen gegen die Ausgrenzung der LGBTQ Community
+              </div>
+              <div class="cubes">
+                <div class="cube1" style="background-color: rgb(242, 141, 141); display: flex;
+                justify-content: center;
+                align-items: center;">
+                 <div class="pos">
+                  <ul id="elementList"></ul>
+                     <div id="prevBtn"><i class="fa-solid fa-arrow-right" style="transform:rotate(180deg);"></i></div>
+                     <div id="nextBtn"><i class="fa-solid fa-arrow-right"></i></div>
+                  </div>
+                  </div>
+              </div>
+              <div class="cubes">
 
                     <div class="cube1">
                         <div class="titel_cube1">
                             Was ist die LGBTQ+ und Wer gehört alles dazu?
                         </div> 
                         <div class="text">
+                            <ul>
                             <div class="les">
+                               
                                 <i class="fa-solid fa-arrow-right-long"></i>
                                     Lesben 
+                              
                             </div>
                             <div class="bis">
                                 <i class="fa-solid fa-arrow-right-long"></i>
@@ -421,10 +519,11 @@
                                     <i class="fa-solid fa-arrow-right-long"></i>
                                     Schwule
                                 </div>
+                            </ul> 
                         </div>
                     </div>
                     <div class="cube1" style="background-color: rgba(62, 207, 159, 0.527);">
-                        <div class="titel_cube1">
+                        <div class="titel_cube1 titel_cube1A">
                             Was bedeutet so genau Homophobie?
                         </div> 
                         <div class="text">
@@ -432,6 +531,7 @@
                         </div>
                     </div>
                 </div>
+                <br>
             </div>
                 
         </div>
@@ -440,10 +540,12 @@
     <div class="footer">
         <div class="text4">
 
-            Website made by&nbsp;<a href="https://github.com/Marcodoro"> Marco</a>  
+            Website made by Alex and&nbsp;<a href="https://github.com/Marcodoro">Marco</a>  
         </div>
     </div>
+
     <script>
+        // Genereller Aufbau
         const burger = document.querySelector("#burger");
         const cross = document.querySelector("#cross");
         const search = document.querySelector("#search");
@@ -451,11 +553,14 @@
         const img = document.querySelector(".img1");
         const input = document.querySelector(".input");
         const container = document.querySelector('.container');
+        const elementList = document.querySelector("#elementList");
+        const prevBtn = document.querySelector("#prevBtn");
+        const nextBtn = document.querySelector("#nextBtn");
 
         let searched = false;
-        burger.addEventListener('click' , clicked)
-        search.addEventListener('click', searchfor)
-        cross.addEventListener('click' , close)
+        burger.addEventListener('click' , clicked);
+       search.addEventListener('click', searchfor);
+        cross.addEventListener('click' , close);
 
         function clicked() {
             img.style.z_index = '-1';
@@ -471,7 +576,7 @@
             menu.style.transform = 'translateY(-49vh)'
         }
 
-        function searchfor() {
+         function searchfor() {
             if (searched == false)
             {
                 input.style.width = '0vw';
@@ -488,9 +593,45 @@
                 setTimeout(() => {
                     input.style.display = 'none';         
                 }, 200);
-
-            }
+             }
         }
+        //Lösungen
+        const data = [
+         "1. Man könnte Kinder, Jugendliche oder auch Erwachsene über das Thema Homosexualität und über die LGBTQ Community aufklären und die Leute, die diese Personengruppe ausschließen klar machen, dass man jede Sexualität respektieren sollte.",
+         "2. Ein weiterer Tipp ist, dass man auch dagegen demonstrieren könnte. Damit macht man die Leute auf das Thema aufmerksam. Allerdngs sind Demonstrationen allgemein nicht so eine gute Idee, da viele Leute von sowas verägert werden.",
+         "3. Was man auch noch gegen die Diskriminierung der LGBTQ Community tun könnte ist einfach, dass man die Befürwortung der LGBTQ Community nicht erzwingt, denn wenn man nicht aktiv dagegen vorgeht, könnte es sein, dass das Zusammenleben mit den Angehörigen für die Leute, die diese Gruppe diskriminieren, völlig normal wird. ",
+         " 4. Man könnte auch noch rein theoretisch die Leute bestafen, die die LGBTQ Community diskriminieren, bestrafen. Jedoch kann man das nicht wirklich kontrollieren und das würde dieses Problem über eine längere Zeit auch nicht bekämpfen.",
+         "5. Die letzte Lösung von uns für dieses Problem ist, dass man die Sichtbarkeit in z.B. Werbungen, Politik oder weiteres fördert, denn dadurch werden sie gleichgestellt in der Gesellschaft und sie werden dann auch von den Leuten, die die diskriminieren, höchwahrscheinlich als normal angesehen."
+        ];
+        document.addEventListener("DOMContentLoaded", function() {
+          let currentIndex = 0;
+          function showItem(index) {
+            const items = elementList.getElementsByTagName("li");
+            for(let i = 0; i < items.length; i++) {
+                items[i].classList.remove("active");
+            }
+            items[index].classList.add("active");
+          }
+          function createListFromArray(data) {
+            data.forEach( item => {
+             const li = document.createElement("li");
+             li.textContent = item;
+             elementList.appendChild(li);
+            });
+          }
+        prevBtn.addEventListener("click", function() {
+            currentIndex = (currentIndex - 1 + data.length) % data.length;
+            showItem(currentIndex);
+        });
+
+        nextBtn.addEventListener("click", function(){
+            currentIndex = (currentIndex + 1) % data.length;
+            showItem(currentIndex);
+        });
+
+        createListFromArray(data);
+        showItem(currentIndex);
+        });
     </script>
 </body>
 </html>
