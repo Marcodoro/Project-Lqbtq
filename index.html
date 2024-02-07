@@ -117,14 +117,12 @@
         }
         .text {
             font-size: 2vw;
-            width: 80%;
             height: 50%;
             display: flex !important;
             flex-direction: column;
             gap: 10px;
             justify-content: center !important;
             align-items: center !important;
-            margin-left: 10%;
         }
         .cubes {
             display: flex;
@@ -323,6 +321,12 @@
         right: 0;
         transform: translatex();
        }
+       .img {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        justify-content: center;
+       }
        @media only screen and (max-width: 508px) {
             .text {
                 font-size: 12px;
@@ -358,6 +362,47 @@
             height: 220px !important;
         }
        }
+       @media only screen and (min-width: 800px) {
+            .infos {
+                height: 150px !important;
+                display: flex;
+                align-items: center;
+            }
+            .text {
+                font-size: 24px;
+            }
+            .titel_cube1 {
+                font-size: 28px
+            }
+       }
+       @media only screen and (min-width: 1900px) {
+            .titel {
+                font-size: 30px;
+            }
+            .infos {
+                font-size: 25px;
+            }
+            .text {
+                font-size: 20px;
+                width: 40vw;
+                display: flex;
+                justify-content: center !important;
+                align-items: center;
+            }
+            .cube1 {
+                height: 60vh;
+                width: 80vw !important;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                align-self: center;
+                align-content: center;
+            }
+            #burger {
+                font-size: 50px;
+            }
+       } 
     </style>
 </head>
 <body>
@@ -407,7 +452,7 @@
             </div>
               <div class="cubes">
 
-                    <div class="cube1" style="width: 102vw; left: 0; border-radius: 0; justify-content: left; display:flex;">
+                    <div class="cube1" style="width: 100vw; left: 0; border-radius: 0; justify-content: left; display:flex;">
                         <div class="titel_cube1">
                             Was ist die LGBTQ+ und Wer gehört alles dazu?
                         </div> 
@@ -454,7 +499,7 @@
                             </ul> 
                         </div>
                     </div>
-                    <div class="cube1" style="background-color: rgba(39, 0, 182, 0.233); width: 102vw; left: 0; border-radius: 0;">
+                    <div class="cube1" style="background-color: rgba(39, 0, 182, 0.233); width: 100vw; left: 0; border-radius: 0;">
                         <div class="titel_cube1 titel_cube1A">
                             Was bedeutet so genau Homophobie?
                         </div> 
