@@ -356,11 +356,21 @@
             }
        }
        @media only screen and (max-width: 366px) {
+        *, ::after, ::before {
+            box-sizing: border-box;
+        }
         .titel {
             font-size: 16px !important;
         }
         .img1 {
             height: 220px !important;
+        }
+        .text {
+            width: 69vw !important;
+        }
+        .cube1 {
+            height: 490px !important;
+            gap: 20px;
         }
        }
        @media only screen and (min-width: 800px) {
@@ -428,6 +438,8 @@
        }
         @media only screen and (max-width: 305px)
         {
+            html {
+            }
             .titel {
                 font-size: 14px !important;
             }
@@ -439,7 +451,7 @@
             }
             .text {
                 font-size: 10px !important;
-                width: 70vw;
+                width: 70vw !important;
             }
             .titel_cube1 {
                 font-size: 12px;
