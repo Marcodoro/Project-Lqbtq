@@ -203,7 +203,7 @@
                 }
         .footer {
             width: 100vw;
-            height: 10vh;
+            height: 30vh;
             background-color: rgb(168, 168, 255);
             left: 0 !important;
             display: flex;
@@ -426,7 +426,28 @@
                 font-size: 50px;
             }
        }
-        
+        @media only screen and (max-width: 305px)
+        {
+            .titel {
+                font-size: 14px !important;
+            }
+            .img1 {
+                height: 190px !important;
+            }
+            .cube1 {
+                height: 400px;
+            }
+            .text {
+                font-size: 10px !important;
+                width: 70vw;
+            }
+            .titel_cube1 {
+                font-size: 12px;
+            }
+        }
+        *, ::after, ::before {
+            box-sizing: border-box;
+        }
     </style>
 </head>
 <body>
