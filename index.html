@@ -202,12 +202,11 @@
             transform: translateX(90vw);
                 }
         .footer {
-            width: 100vw;
+            width: 98.5vw;
             height: 30vh;
             background-color: rgb(168, 168, 255);
-            left: 0 !important;
             display: flex;
-            justify-content: center;
+            justify-content: center left !important;
             align-items: center;
         }
         body {
@@ -232,13 +231,10 @@
             font-weight: 600;
         }
         .input {
-            /width: 40vw;/
-            width: 0vw;
-            /display: flex;/
             display: none;
             height: 4vh;
             transition: ease-in 0.2s;
-            border-radius: 5px;
+            border-radius: 30px;
             border: 1px solid rgb(255, 255, 255);
             transform: translateX(-60vw) translateY(2vh);
             position: absolute;
@@ -491,6 +487,10 @@
                 font-size: 14px !important;
             }
         }
+        .input::placeholder {
+            font-family: poppins !important;
+            font-weight: 900;
+        }
     </style>
 </head>
 <body>
@@ -634,7 +634,13 @@
             burger.style.transform = 'scale(1)';
             }, 300);
             menu.style.transform = 'translateY(-0vh)'
-
+            
+            input.style.width = '0vw';
+                input.style.display = 'flex';         
+                searched = true;
+                setTimeout(() => {
+                input.style.width = '40vw';
+                }, 0)
         }
 
         function close() {
